@@ -15,7 +15,7 @@ public class TabletteController {
     @Autowired
     private TabletteRepoJumia tabletteRepoJumia;
 
-    @GetMapping("/tablette")
+    @GetMapping("/Tablette")
     List<Tablette> getAllTablette() {
         return tabletteRepoJumia.findAll();
 
