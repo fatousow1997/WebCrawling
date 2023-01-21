@@ -13,5 +13,5 @@ class TelephonesamsungjumiaSpider(scrapy.Spider):
                 'image':bk.css('a.core img::attr(data-src)').get(),
                 'Nom':bk.css('div.name::text').get(),  
                 'Nouveau Prix':bk.css('div.prc::text').get(),
-                'url':
+                
             }
