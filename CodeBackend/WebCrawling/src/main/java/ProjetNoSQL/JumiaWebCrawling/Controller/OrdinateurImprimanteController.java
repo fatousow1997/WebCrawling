@@ -16,7 +16,7 @@ public class OrdinateurImprimanteController {
     @Autowired
     private OrdinateurImprimanteRepository ordinateurImprimanteRepository;
 
-    @GetMapping("/ordinateurimprimante")
+    @GetMapping("/ordinateur")
     List<OrdinateurImprimante> getAllRefrigerateur(){
         return  ordinateurImprimanteRepository.findAll();
 
