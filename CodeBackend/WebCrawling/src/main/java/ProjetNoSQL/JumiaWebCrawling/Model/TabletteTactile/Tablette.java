@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "IphoneTel")
+@Document(collection = "TabletteTactile")
 public class Tablette {
     @Id
     private  String _id;
