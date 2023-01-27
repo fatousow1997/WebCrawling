@@ -1,0 +1,63 @@
+<header></header>
+
+<nav class="navbar navbar-expand-md navbar-white bg-warning">
+  
+  <a class="navbar-brand" href="/home" id="shop"> <button mat-menu-item ><i class="fa fa-home"></i>JUMIAWR</button></a>
+  <button mat-button [matMenuTriggerFor]="Electroniques"><i class="fa fa-tv"></i>Electroniques</button>
+<mat-menu #Electroniques="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="tv">TV ,VIDEO & HOME CINEMA</button>
+</mat-menu>
+
+<mat-menu #tv="matMenu">
+  <a class="navbar-brand" href="/tv"><button mat-menu-item>TV</button></a>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="Electromenagers"><i class="fa fa-shopping-cart"></i>Electroménagers</button>
+  <mat-menu #Electromenagers="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="refrigerateurs">GROS ELECTROMENAGERS</button>
+  </mat-menu>
+
+  <mat-menu #refrigerateurs="matMenu">
+    <a class="navbar-brand" href="/refrigerateur"><button mat-menu-item>Réfrigérateurs</button></a>
+  </mat-menu>
+
+  
+<button mat-button [matMenuTriggerFor]="tabphone"><i class="fa fa-phone"></i>Tablette & Téléphone</button>
+<mat-menu #tabphone="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="telephone">TELEPHONE</button>
+  <button mat-menu-item [matMenuTriggerFor]="tablette">TABLETTE</button>
+</mat-menu>
+
+<mat-menu #telephone="matMenu">
+  <a class="navbar-brand" href="/iphones"><button mat-menu-item>Iphone</button></a>
+</mat-menu>
+<mat-menu #tablette="matMenu">
+  <a class="navbar-brand" href="/tablette"><button mat-menu-item>Tactile</button></a>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="santebeaute"><i class="fa fa-heart"></i>Santé & Beauté</button>
+<mat-menu #santebeaute="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="maq">MAQUILLAGE</button>
+</mat-menu>
+
+<mat-menu #maq="matMenu">
+  <a class="navbar-brand" href="/maquillage"><button mat-menu-item>Visage & teint</button></a>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="inf"><i class="fa fa-laptop"></i>Informatque</button>
+<mat-menu #inf="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="ordiimp">ORDINATEURS & IMPRIMANTE</button>
+</mat-menu>
+
+<mat-menu #ordiimp="matMenu">
+  <a class="navbar-brand" href="/ordinateur"><button mat-menu-item>Ordinateurs</button></a>
+</mat-menu>
+
+ 
+</nav>
+
+<router-outlet></router-outlet>
+
+
