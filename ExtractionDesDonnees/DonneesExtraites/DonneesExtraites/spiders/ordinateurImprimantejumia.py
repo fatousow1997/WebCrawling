@@ -13,6 +13,6 @@ class OrdinateurSpider(scrapy.Spider):
                 'name':ordi.css('h3.name::text').get().strip(),
                 'new-price':ordi.css('div.prc::text').get().strip(),
                 'old-price':ordi.css('div.old::text').get(),
-                'url': 'www.jumia.sn'+ordi.css('a.core::attr(href)').get(),
+
 
             }
