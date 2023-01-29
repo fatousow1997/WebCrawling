@@ -14,5 +14,5 @@ class BeauteSpider(scrapy.Spider):
                 'name':beaut.css('h3.name::text').get().strip(),
                 'new-price':beaut.css('div.prc::text').get().strip(),
                 'old-price':beaut.css('div.old::text').get(),
-                'url':'www.jumia.sn'+beaut.css('a.core::attr(href)').get(),
+
             }

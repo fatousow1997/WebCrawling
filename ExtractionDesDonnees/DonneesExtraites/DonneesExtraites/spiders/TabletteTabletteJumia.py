@@ -14,5 +14,5 @@ class TablettetablettejumiaSpider(scrapy.Spider):
                 'nom':bk.css('h3.name::text').get(),  
                 'new-price':bk.css('div.prc::text').get(),
                 'old-price':bk.css('div.old::text').get(),
-                'url': 'www.jumia.sn'+bk.css('a.core::attr(href)').get()          
+
             }
